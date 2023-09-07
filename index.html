@@ -1,106 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Укладка теплого пола. Надежные материалы. Опытные монтажники. Регулируемая температура пола. Защита от замыканий. Гарантия 10 лет.">
-    <meta name="keywords" content="Пол, Тепло, Надежный">
-    <meta name="author" content="Anastasia Ilina">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Укладка теплого пола. Надежные материалы. Опытные монтажники. Регулируемая температура пола. Защита от замыканий. Гарантия 10 лет."
+    />
+    <meta name="keywords" content="Пол, Тепло, Надежный" />
+    <meta name="author" content="Anastasia Ilina" />
     <title>Теплый пол</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/pictures/sun.png">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/pictures/sun.png"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
+  </head>
+  <body>
     <h1 class="hidden-header">Теплый пол</h1>
-    <header> 
-        <img src="./assets/pictures/logo.svg" alt="Логотип Теплого пола">
-        <a href="#calc">заказать</a>
+    <header class="header">
+      <img
+        src="./assets/pictures/logo.svg"
+        alt="Логотип Теплого пола"
+        class="header__logo"
+      />
+      <a href="#calc" class="header__button">заказать</a>
     </header>
     <main class="grid-wrapper">
-        <section>
-            <h2>Приносим тепло в каждый дом</h2>
-            <p>Устанавливаем теплые полы в квартирах, офисах и загородных домах.</p>
-            <button>Рассчитать стоимость</button>
-        </section>
-        <section>
-            <button>
-                <img src="./assets/pictures/arrow.png" alt="Кнопка слайдера">
-            </button>
-            <button>
-                <img src="./assets/pictures/arrow.png" alt="Кнопка слайдера">
-            </button>
-        </section>
-        <section>
-            <h2>Наши преимущества</h2>
-        </section>
-        <section>
-            <ul>
-                <li>Надежные материалы</li>
-                <li>опытные монтажники</li>
-                <li>Регулируемая температура пола</li>
-                <li>Защита от замыканий</li>
-                <li>Гарантия до 10 лет</li>
-            </ul>
-        </section>
-        <section id="calc">
-            <h2>Рассчитайте стоимость</h2>
-            <form>
-                <label for="whidth">Ширина помещения, м</label>
-                <input type="text" id="width" name="width">
-                <label for="length">Длина помещения, м</label>
-                <input type="text" id="length" name="width">
-                <fieldset>
-                    <legend>Тариф</legend>
-                    <input type="radio" name="pricing" id="econom">
-                    <label for="econom">Эконом</label>
-                    <input type="radio" name="pricing" id="comfort">
-                    <label for="comfort">комфорт</label>
-                    <input type="radio" name="pricing" id="premium">
-                    <label for="premium">Премиум</label>
-                </fieldset>
-            </form>
-        </section>
-        <section>
-            <div>
-                <p>Площадь</p>
-                <p>35 кв м</p>
-                <p>Примерная стоимость</p>
-                <p>42590 руб</p>
+      <section class="hero">
+        <h2 class="hero__heading">Приносим тепло в каждый дом</h2>
+        <p class="hero__info">
+          Устанавливаем теплые полы в квартирах, офисах и загородных домах.
+        </p>
+        <a href="#calc" class="hero__btn">Рассчитать стоимость</a>
+      </section>
+      <section class="slider">
+        <div class="slider__controls">
+          <button class="btn__left">
+            <img
+              src="./assets/pictures/arrow.png"
+              alt="Кнопка слайдера"
+              class="arrow__left"
+            />
+          </button>
+          <button class="btn__right">
+            <img
+              src="./assets/pictures/arrow.png"
+              alt="Кнопка слайдера"
+              class="arrow__right"
+            />
+          </button>
+        </div>
+      </section>
+      <section>
+        <h2 class="advantages__header">Наши преимущества</h2>
+      </section>
+      <section class="advantages">
+        <ul class="advantages__list">
+          <li class="advantages__list__item">Надежные материалы</li>
+          <li class="advantages__list__item">опытные монтажники</li>
+          <li class="advantages__list__item">Регулируемая температура пола</li>
+          <li class="advantages__list__item">Защита от замыканий</li>
+          <li class="advantages__list__item">Гарантия до 10 лет</li>
+        </ul>
+      </section>
+      <section id="calc" class="calculator">
+        <h2 class="calculator__heading">Рассчитайте стоимость</h2>
+        <form class="calculator__form">
+          <div class="form__input">
+            <div class="form__seg">
+              <label class="seg__label" for="whidth">Ширина помещения, м</label>
+              <input class="seg__input" type="text" id="width" name="width" />
             </div>
-        </section>
+            <div class="form__seg">
+              <label class="seg__label" for="length">Длина помещения, м</label>
+              <input class="seg__input" type="text" id="length" name="width" />
+            </div>
+          </div>
+          <fieldset class="radio-chek">
+            <legend class="radio__heading">Тариф</legend>
+            <div class="form__wrapper">
+              <input
+                class="radio__input"
+                type="radio"
+                name="pricing"
+                id="econom"
+              />
+              <label class="radio__label" for="econom">Эконом</label>
+              <input
+                class="radio__input"
+                type="radio"
+                name="pricing"
+                id="comfort"
+                checked
+              />
+              <label class="radio__label" for="comfort">комфорт</label>
+              <input
+                class="radio__input"
+                type="radio"
+                name="pricing"
+                id="premium"
+              />
+              <label class="radio__label" for="premium">Премиум</label>
+            </div>
+          </fieldset>
+          <input type="submit" value="Рассчитать" class="form__submit" />
+        </form>
+      </section>
+      <section class="results">
+        <div class="results__window">
+          <div class="results__window__wrapper">
+            <p class="results__title">Площадь</p>
+            <p class="results__info">35 кв м</p>
+          </div>
+          <div class="results__window__wrapper">
+            <p class="results__title">Примерная стоимость</p>
+            <p class="results__info">42590 руб</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-    <img src="./assets/pictures/logo.svg" alt="Логотип Теплого пола">
-    <ul>
-        <li>
+    <footer class="footer">
+      <hr class="line" />
+      <div class="contacts">
+        <img src="./assets/pictures/logo.svg" alt="Логотип Теплого пола" />
+        <ul class="social">
+          <li>
             <a>
-                <img src="./assets/pictures/youtube.svg" alt="Логотип youtube и ссылка на youtube">
+              <img
+                src="./assets/pictures/youtube.svg"
+                alt="Логотип youtube и ссылка на youtube"
+              />
             </a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a>
-                <img src="./assets/pictures/telegram.svg" alt="Логотип telegram и ссылка на telegram">
-            </a>   
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <a href="tel:7-858-849-73-80">
-                <img src="./assets/pictures/telephone-fill.svg">
-                <p>+7 858 849 73 80</p>
+              <img
+                src="./assets/pictures/telegram.svg"
+                alt="Логотип telegram и ссылка на telegram"
+              />
             </a>
-        </li>
-        <li>
-            <a href="mailto:Teplyipol@gmail.com">
-                <img src="./assets/pictures/envelope-at-fill.svg">
-                <p>Teplyipol@gmail.com</p>
+          </li>
+        </ul>
+        <ul class="access">
+          <li class="access__item">
+            <a href="tel:7-858-849-73-80" class="access__link">
+              <img src="./assets/pictures/telephone-fill.svg" />
+              <p class="access__link__text">+7 858 849 73 80</p>
             </a>
-        </li>
-    </ul>
-    <p>© Теплый пол, 2023</p>
-    <p>Designer: Anastasia Ilina</p>
-    <p>Developer: Smuraha Katsiaryna</p>
-</body>
+          </li>
+          <li>
+            <a href="mailto:Teplyipol@gmail.com" class="access__link">
+              <img src="./assets/pictures/envelope-at-fill.svg" />
+              <p class="access__link__text">Teplyipol@gmail.com</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright__info">
+        <p class="">© Теплый пол, 2023</p>
+        <div class="creators">
+          <p>Designer: Anastasia Ilina</p>
+          <p>Developer: Smuraha K</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
